@@ -6,20 +6,49 @@
 
 <body>
 
-  <form>
+  <form novalidate>
     <div>
-      <label for="choose">Would your prefer a banana or a cherry?</label>
-      <input id="choose" name="i_like" required minlength="6" maxlength="6">
+      <label for='mail'>
+        <span>Please enter an e-mail address:</span>
+        <input type='email' id='mail' name="mail" required minlength="8">
+        <span class='error'></span>
+      </label>
     </div>
+    <br></br>
+
     <div>
-      <label for="number">How many would you like?</label>
-      <input type="number" id="number" name="amount" value="1" min="1" max="10">
+      <label for='country-code'>
+        <span>Please enter your country code +6:</span>
+        <input type='number' id='country-code' name="country-code" required maxlength="2">
+        <span class='error'></span>
+      </label>
     </div>
+    <br></br>
+
     <div>
-      <button>Submit</button>
+      <label for='post-code'></label>
+      <span>Please enter your post-code:</span>
+      <input type='number' id='post-code' name="post-code" required maxlength="4">
     </div>
+    <br></br>
+
+    <div>
+      <label for='password'></label>
+      <span>Please enter your password:</span>
+      <input type='password' id='password' name="password" required minlength="6">
+    </div>
+    <br></br>
+
+    <div>
+      <label for='confirm-password'></label>
+      <span>Please confirm your password:</span>
+      <input type='password' id='confirm-password' name="confirm-password" required minlength="6">
+    </div>
+
   </form>
-  <div id='test'>Hello</div>
+
+
+  <script src='index.js'></script>
 
 </body>
 

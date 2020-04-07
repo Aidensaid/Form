@@ -92,3 +92,25 @@ function showPasswordError() {
   }
 }
 
+const confirmPassword = document.getElementById('confirm-password')
+const confirmPasswordError = document.querySelector('#confirm-password +span.error')
+
+confirmPassword.addEventListener('input', function (event) {
+  if (confirmPassword.value === password.value) {
+    confirmPasswordError.innerHTML = ''
+    confirmPasswordError.className = 'error'
+  } else {
+    showConfirmPasswordError()
+  }
+})
+
+form.addEventListener('submit', function (event) {
+  if (!confirmPassword.validity.valid) {
+    showConfirmPasswordError();
+    event.preventDefault()
+  }
+})
+
+function showConfirmPasswordError() {
+  confirmPasswordError.textContent = 'passwords don\'t match'
+}

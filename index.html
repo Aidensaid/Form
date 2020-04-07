@@ -28,7 +28,7 @@
     <div>
       <label for='post-code'></label>
       <span>Please enter your post-code:</span>
-      <input type='text' id='post-code' name="post-code" required maxlength="4">
+      <input type='text' id='post-code' name="post-code" pattern="[test]" required maxlength="4">
     </div>
     <br></br>
 
@@ -42,9 +42,11 @@
     <br></br>
 
     <div>
-      <label for='confirm-password'></label>
-      <span>Please confirm your password:</span>
-      <input type='password' id='confirm-password' name="confirm-password" required minlength="6">
+      <label for='confirm-password'>
+        <span>Please confirm your password:</span>
+        <input type='password' id='confirm-password' name="confirm-password" required minlength="6">
+        <span class='error'></span>
+      </label>
     </div>
 
   </form>

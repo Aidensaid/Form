@@ -16,6 +16,7 @@ email.addEventListener('input', function (event) {
   }
 });
 
+
 form.addEventListener('submit', function (event) {
   if (!email.validity.valid) {
     showEmailError();
@@ -39,11 +40,13 @@ const countryCodeError = document.querySelector('#country-code +span.error')
 
 countryCode.addEventListener('input', function (event) {
   l(countryCode.validity.valid)
+  l(countryCode.validity.valid)
   if (countryCode.validity.valid) {
-    countryCodeError.innerHTMl = '';
-    countryCodeError.className = 'error'
+    l('clearing error message')
+    countryCodeError.textContent = '';
+    l(countryCodeError.innerHTML)
+    countryCodeError.className = 'error';
   } else {
-    l('error')
     showCountryError()
   }
 });
@@ -56,16 +59,17 @@ form.addEventListener('submit', function (event) {
 });
 
 function showCountryError() {
-
-  if (countryCode.validity.valueMissing) {
-    countryCodeError.textContent = 'You need to enter a country code'
-  } else if (countryCode.validity.patternMismatch) {
+  if (countryCode.validity.patternMismatch) {
     countryCodeError.textContent = 'Entered value must be a number'
-  } else if (countryCode.validity.tooLong) {
-    countryCodeError.textContent = `Country code should be a maximum of ${countryCode.maxLength} characters; you entered ${countryCode.value.length}; `
   }
   emailError.className = 'error active'
 }
+
+//   if (countryCode.validity.valueMissing) {
+//     countryCodeError.textContent = 'You need to enter a country code'
+//   } else 
+// } else if (countryCode.validity.tooLong) {
+//   countryCodeError.textContent = `Country code should be a maximum of ${countryCode.maxLength} characters; you entered ${countryCode.value.length}; `
 
 const password = document.getElementById('password')
 const passwordError = document.querySelector('#password +span.error')

@@ -19,16 +19,9 @@
     <div>
       <label for='country-code'>
         <span>Please enter your country code +6:</span>
-        <input type='text' id='country-code' name="country-code" required>
+        <input type='text' id='country-code' name="country-code" required pattern="[0-9]{1}">
         <span class='error'></span>
       </label>
-    </div>
-    <br></br>
-
-    <div>
-      <label for='post-code'></label>
-      <span>Please enter your post-code:</span>
-      <input type='text' id='post-code' name="post-code" pattern="[test]" required maxlength="4">
     </div>
     <br></br>
 

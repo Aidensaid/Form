@@ -73,7 +73,7 @@ body {
 /*Why does display:block allow for centering the img element?*/
 
 img {
-  margin-top: 100px;
+  margin-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +82,7 @@ img {
 
 form {
   display: block;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -147,9 +147,6 @@ i {
 /*how can I remove padding from this element, but not the entire container*/
 
 .captcha-container {
-  position: relative;
-  margin: 0;
-  padding:0;
   display: block;
   height: 40px;
   width: 100%;
@@ -159,14 +156,23 @@ i {
 /*How can I center this?*/
 
 .captcha {
-  position: absolute; 
   display: block;
+  padding-top: 15px;
 }
 
 footer {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width:600px;
+font-size: 12px;
+text-align: center;
 }
 
 li {
+  display: inline;
+  margin-left: 4px;
+  font-size: 15px;
 }
 
 .list{

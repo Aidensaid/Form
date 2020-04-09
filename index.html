@@ -9,17 +9,18 @@
 </head>
 
 <body>
-  <img src="logo.png" alt="intuit logo">
-  <container>
-    <header>
-      <!-- <img src="logo.png" alt="intuit logo"> -->
-    </header>
-    <form>
-      <h1>Create an Intuit account</h1>
-      <span class="tagline">One account for everything Intuit, including Mint</span>
+  <header class="container">
+    <img src="logo.png" alt="intuit logo">
+  </header>
+  <form>
+    <section class="container">
       <br></br>
-      <!-- <span class="learn-more">Learn More</span> -->
-      <a class="learn-more" href="https://www.w3schools.com/html/">Learn More</a>
+      <h1>Create an Intuit account</h1>
+      <br></br>
+      <span class="tagline">One account for everything Intuit. <a class="learn-more"
+          href="https://www.w3schools.com/html/"> Learn More</a> </span>
+    </section>
+    <section class="container">
       <br></br>
       <label for="email">
         <span>Email address</span>
@@ -39,6 +40,8 @@
         <input id="password" type="password" name="password" required>
       </label>
       <br></br>
+    </section>
+    <section class="container">
       <button>Create Account</button>
       <br></br>
       <i>By clicking Create account, you agree to our <a href="https://www.w3schools.com/html/">Terms</a> and have read
@@ -48,18 +51,22 @@
         <i class="captcha">Invisible reCAPTCHA by Google <a href="https://www.w3schools.com/html/">Privacy Policy</a>
           and <a href="https://www.w3schools.com/html/">Terms of Use</a></i>
       </div>
-    </form>
-    <footer>
-      <ul>
-        <li><a class="list" href="https://www.w3schools.com/html/">Legal</a></li>
-        <li><a class="list" href="https://www.w3schools.com/html/">Privacy</a></li>
-        <li><a class="list" href="https://www.w3schools.com/html/">Security</a></li>
-      </ul>
-      <p>©2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered
-        trademarks of Intuit Inc. Terms and conditions, features, support, pricing, and service options subject to
-        change without notice.</p>
-    </footer>
-  </container>
+    </section>
+  </form>
+  <footer class="container">
+    <ul>
+      <li><a class="list" href="https://www.w3schools.com/html/">Legal</a></li>
+      <li><a class="list" href="https://www.w3schools.com/html/">Privacy</a></li>
+      <li><a class="list" href="https://www.w3schools.com/html/">Security</a></li>
+    </ul>
+    <p>©2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered
+      trademarks of Intuit Inc. Terms and conditions, features, support, pricing, and service options subject to
+      change without notice.</p>
+  </footer>
+
+
+
+
 </body>
 
 </html>

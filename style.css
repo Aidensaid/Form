@@ -112,6 +112,7 @@ a {
 input {
   display: block;
   width: 80%;
+  border-width: 2px;
 }
 
 /* Why doesn't the padding left below affect the input div, which is a child of label?*/
@@ -172,6 +173,6 @@ li {
 
 /* Validation */
 
-input:invalid {
-  border-color: orangered;
+.invalid {
+  border-color: red
 }

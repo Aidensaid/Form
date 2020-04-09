@@ -10,11 +10,17 @@ l(email.validity.valid)
 
 function showEmailError() {
   if (!email.validity.valid) {
-    l('show error text')
+    l(email.validity.valid)
+    emailErrorMessage.textContent = 'Please enter a valid email address.'
+    email.classList.add('invalid')
+  } else {
+    l(email.validity.valid)
+    emailErrorMessage.textContent = ' '
+    email.classList.remove('invalid')
   }
 }
 
 email.addEventListener('input', () => {
   showEmailError()
-  emailErrorMessage.textContent = 'Please check the formatting of your email address'
-})
+});
+

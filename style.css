@@ -112,11 +112,6 @@ a {
 input {
   display: block;
   width: 80%;
-  padding-left: auto;
-  padding-right: auto;
-}
-
-span {
 }
 
 /* Why doesn't the padding left below affect the input div, which is a child of label?*/
@@ -175,8 +170,8 @@ li {
   font-size: 15px;
 }
 
-.list{
-}
+/* Validation */
 
-p {
+input:invalid {
+  border-color: orangered;
 }

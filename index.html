@@ -9,16 +9,17 @@
 </head>
 
 <body>
+  <img src="logo.png" alt="intuit logo">
   <container>
     <header>
-      <h1></h1>
-      <span></span>
+      <!-- <img src="logo.png" alt="intuit logo"> -->
     </header>
     <form>
       <h1>Create an Intuit account</h1>
       <span class="tagline">One account for everything Intuit, including Mint</span>
       <br></br>
-      <span class="learn-more">Learn More</span>
+      <!-- <span class="learn-more">Learn More</span> -->
+      <a class="learn-more" href="https://www.w3schools.com/html/">Learn More</a>
       <br></br>
       <label for="email">
         <span>Email address</span>
@@ -40,18 +41,23 @@
       <br></br>
       <button>Create Account</button>
       <br></br>
-      <i>By clicking Create account, you agree to our Terms and have read and acknowledge our Privacy Statement</i>
+      <i>By clicking Create account, you agree to our <a href="https://www.w3schools.com/html/">Terms</a> and have read
+        and acknowledge our <a href="https://www.w3schools.com/html/">Privacy Statement</a></i>
       <br></br>
       <div class="captcha-container">
-        <i class="captcha">Invisible reCAPTCHA by Google Privacy Policy and Terms of Use.</i>
+        <i class="captcha">Invisible reCAPTCHA by Google <a href="https://www.w3schools.com/html/">Privacy Policy</a>
+          and <a href="https://www.w3schools.com/html/">Terms of Use</a></i>
       </div>
     </form>
     <footer>
       <ul>
-        <li>Legal</li>
-        <li>Privacy</li>
-        <li>Security</li>
+        <li><a class="list" href="https://www.w3schools.com/html/">Legal</a></li>
+        <li><a class="list" href="https://www.w3schools.com/html/">Privacy</a></li>
+        <li><a class="list" href="https://www.w3schools.com/html/">Security</a></li>
       </ul>
+      <p>©2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered
+        trademarks of Intuit Inc. Terms and conditions, features, support, pricing, and service options subject to
+        change without notice.</p>
     </footer>
   </container>
 </body>
